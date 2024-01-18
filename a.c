@@ -68,6 +68,9 @@ int main()
         if (!NT_SUCCESS(status)) {
             printf("[-] D3DKMTEscape failed (%x)", status);
         }
+        if(bf_index > 752){
+            break;
+        }
         bf_index += 1;
         //getchar();
     }
